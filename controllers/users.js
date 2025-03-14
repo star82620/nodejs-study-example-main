@@ -17,6 +17,7 @@ function isNotValidSting(value) {
 }
 
 class UsersController {
+  // postSignup API 的內容
   static async postSignup(req, res, next) {
     try {
       const { name, email, password } = req.body;
