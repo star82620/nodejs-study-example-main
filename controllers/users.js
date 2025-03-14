@@ -17,7 +17,7 @@ function isNotValidSting(value) {
 }
 
 class UsersController {
-  // postSignup API 的內容
+  // postSignup API 註冊
   static async postSignup(req, res, next) {
     try {
       const { name, email, password } = req.body;
@@ -78,6 +78,9 @@ class UsersController {
       next(error);
     }
   }
+
+  // postSignin API 登入
+  static async postSignin(req, res, next) {}
 }
 
 module.exports = UsersController;
